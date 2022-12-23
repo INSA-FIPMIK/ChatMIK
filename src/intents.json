@@ -1,0 +1,140 @@
+{
+  "intents": [
+    {
+      "tag": "Salutations",
+      "patterns": [
+        "Bonjour",
+        "Hey",
+        "Salut"
+      ],
+      "responses": [
+        "Bonjour, que puis-je faire pour vous?",
+        "Bonjour, comment puis-je vous aider?"
+      ]
+    },
+    {
+      "tag": "Langues",
+      "patterns": [
+        "changer de langue"
+      ],
+      "responses": [
+        "Choisissez votre langue : anglais, allemand ou français"
+      ]
+    },
+    {
+      "tag": "Hey",
+      "patterns": [
+        "Hello",
+        "Hi"
+      ],
+      "responses": [
+        "Hello, how can I help you?"
+      ]
+    },
+    {
+      "tag": "Hallo",
+      "patterns": [
+        "Hallo",
+        "Guten Tag"
+      ],
+      "responses": [
+        "Hallo, wie kann ich dich helfen?"
+      ]
+    },
+    {
+      "tag": "Au revoir",
+      "patterns": ["Au revoir", "quitter", "Arreter"],
+      "responses": [
+        "Au revoir",
+        "Au plaisir de vous revoir"
+      ]
+    },
+    {
+      "tag": "Good bye",
+      "patterns": ["quit", "stop", "Bye"],
+      "responses": [
+        "Good bye",
+        "Bye"
+      ]
+    },
+    {
+      "tag": "Viel spass",
+      "patterns": ["Verlassen"],
+      "responses": [
+        "Bis Bald"
+      ]
+    },
+    {
+      "tag": "Merci",
+      "patterns": ["Merci", "Merci beaucoup"],
+      "responses": ["Ravi d'avoir pu aider", "C'est un plaisir"]
+    },
+    {
+      "tag": "Sans réponses",
+      "patterns": [],
+      "responses": ["Désolé, je ne vous ai pas compris", "Donnez moi plus d'infos svp", "Je suis pas sur d'avoir compris"]
+    },
+    {
+      "tag": "No answers",
+      "patterns": [],
+      "responses": ["Sorry, can you repeat pls", "I'm not sure I understand it right"]
+    },
+    {
+      "tag": "Keine Antwort",
+      "patterns": [],
+      "responses": ["Entschuldigung, ich habe nicht verstanden"]
+    },
+    {
+      "tag": "Options français",
+      "patterns": [
+        "Comment pouvez-vous m'aider?", "Que pouvez-vous faire?", "Qu'est-ce que vous proposez?", "Que faites-vous?"],
+      "responses": [
+        "Je peux vous donner des informations sur la formation MIK par apprentissage en parcours franco/allemand"]
+    },
+    {
+      "tag": "Options english",
+      "patterns": [
+        "How can you help me?", "What can you do?"],
+      "responses": [
+        "I can give you informations about the apprenticeship in MIK at INSA Strasbourg"]
+    },
+    {
+      "tag": "Options anglais",
+      "patterns": [
+        "Wie können Sie mir helfen?", "Was können Sie tun?"],
+      "responses": [
+        "Ich kann infos über die Ausbildung MIK geben"]
+    },
+    {
+      "tag": "Question 1",
+      "patterns": ["Qu'est-ce que la mécatronique?"],
+      "responses": ["C'est une discipline alliant la mécanique, l'électronique et l'informatique pour concevoir des systèmes de production industrielle."]
+    },
+    {
+      "tag": "Question 2",
+      "patterns": ["Est-il possible de faire une formation mécatronique à l'INSA de Strasbourg?", "Pouvez-vous m'en dire plus?"],
+      "responses": ["Oui, bien sûr. Il y a la possibilité faire la formation en initial et en apprentissage."]
+    },
+    {
+      "tag": "Question 3",
+      "patterns": ["Pouvez-vous m'en dire plus sur la formation par apprentissage ?"],
+      "responses": ["C'est une formation en parcours franco/allemand, avec un rythme d'alternance de 2 semaines d'entreprise et 2 semaines d'école. Il y a un semestre en allemagne à effectuer en 4e année, qui compte dans l'expérience obligatoire à l'étranger que dois réaliser un futur ingénieur."]
+    },
+    {
+      "tag": "OH YEAH",
+      "patterns": ["OH YEAH", "OHHHHH YEAHHHH"],
+      "responses": ["OHHHHHHHHHHH YEAHHHHHHH!!!"]
+    },
+    {
+      "tag": "Blagues",
+      "patterns": [
+        "Raconte-moi une blague",
+        "Dis moi quelque chose de marrant"
+      ],
+      "responses": [
+        "Il paraît que c'est en sciant que Léonard devint scie.",
+        "Vous connaissez l'histoire de l'armoire antipathique? Elle n'est pas commode..."
+      ]
+    }
+  ]
+}
