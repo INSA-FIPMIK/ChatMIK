@@ -9,6 +9,7 @@ https://gist.github.com/mdipietro09/1c6f8dab3459772bdced260c7a7f4734#file-chatbo
 ## Initial Setup:
 Clonez le repository
 ```
+$ git@github.com:INSA-FIPMIK/ChatMIK.git
 $ cd ChatMIK
 ```
 
