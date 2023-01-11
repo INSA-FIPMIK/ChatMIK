@@ -8,15 +8,22 @@ https://gist.github.com/mdipietro09/1c6f8dab3459772bdced260c7a7f4734#file-chatbo
 
 ## Initial Setup:
 Clonez le repository
-cd ChatMIK
+```
+$ cd ChatMIK
+```
 
 ## Sur votre ordinateur:
-Vous pouvez créer un environnement virtuel (venv) pour installer toutes les librairies  et éxécuter les programmes :
+Vous pouvez créer un environnement virtuel (venv) pour installer toutes les librairies  et éxécuter les programmes : (sur mac)
 
 ```
 $ python3 -m venv nom_du_virtual_env
-$ . nom_du_virtual_env/bin/activate (sur mac)
+$ . nom_du_virtual_env/bin/activate
+```
+Vous pouvez créer un environnement virtuel (venv) pour installer toutes les librairies  et éxécuter les programmes : (sur windows)
 
+```
+$ python3 -m venv nom_du_virtual_env
+$ . nom_du_virtual_env/bin/activate
 ```
 Installez les librairies nécessaires :
 ```
@@ -62,4 +69,18 @@ Pour run l'image:
 
 ```
 $ drun -c nom_image
+```
+
+Possibilités de problèmes:
+```
+$ export LC_CTYPE-"en_US.UTF-8"
+$ python3
+$ >>> import nltk
+$ >>> nltk.download('punkt')
+```
+
+Run:
+```
+python3 train.py
+python3 chat.py
 ```
