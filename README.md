@@ -1,52 +1,65 @@
-# Chatbot Deployment with Flask and JavaScript
+# ChatMIK
 
-In this tutorial we deploy the chatbot I created in [this](https://github.com/python-engineer/pytorch-chatbot) tutorial with Flask and JavaScript.
+Created from https://github.com/nlpTRIZ/jetson_docker_X_forwarding
 
-This gives 2 deployment options:
-- Deploy within Flask app with jinja2 template
-- Serve only the Flask prediction API. The used html and javascript files can be included in any Frontend application (with only a slight modification) and can run completely separate from the Flask App then.
+Ce projet s'est inspiré de programmes déjà existants :
+https://github.com/patrickloeber/chatbot-deployment
+https://gist.github.com/mdipietro09/1c6f8dab3459772bdced260c7a7f4734#file-chatbot
 
 ## Initial Setup:
-This repo currently contains the starter files.
+Clonez le repository
+cd ChatMIK
 
-Clone repo and create a virtual environment
+## Sur votre ordinateur:
+Vous pouvez créer un environnement virtuel (venv) pour installer toutes les librairies  et éxécuter les programmes :
+
 ```
-$ git clone https://github.com/python-engineer/chatbot-deployment.git
-$ cd chatbot-deployment
-$ python3 -m venv venv
-$ . venv/bin/activate
+$ python3 -m venv nom_du_virtual_env
+$ . nom_du_virtual_env/bin/activate (sur mac)
+
 ```
-Install dependencies
+Installez les librairies nécessaires :
 ```
-$ (venv) pip install Flask torch torchvision nltk
+$ (venv) pip3 install Flask torch torchvision nltk gTTS SpeechRecognition netron
 ```
-Install nltk package
+Installez les packages nltk :
 ```
-$ (venv) python
+$ (venv) python3
 >>> import nltk
 >>> nltk.download('punkt')
 ```
-Modify `intents.json` with different intents and responses for your Chatbot
 
 Run
 ```
-$ (venv) python train.py
+$ (venv) python3 train.py
+$ (venv) python3 chat.py
 ```
-This will dump data.pth file. And then run
-the following command to test it in the console.
+Vous aurez un chatbot qui fonctionne dans le terminal avec qui vous pourrez discuter
+
+## Sur la jetson nano:
+Il faut se connecter à la jetson: (dans le cas où vous êtes connectés en filaire avec l'ordinateur)
 ```
-$ (venv) python chat.py
+$ ssh -X jetson7@192.168.55.1 
+
+```
+Vous pouvez aussi vous connecter par le wifi si l'ordinateur et la jetson sont connecté sur le même wifi: (listes de wifi disponibles)
+```
+$ nmcli dev wifi
+```
+Pour se connecter à un réseau wifi: (ifconfig' pour trouver la bonne adresse (XXX.XXX.XX.X) et taper ssh -X jetson7@XXX.XXX.XX.X)
+```
+$ nmcli dev wifi connect nom_du_wifi password "mot_de_passe"
+$ ifconfig
+$ ssh -X jetson7@XXX.XXX.XX.X
+```
+Pour créer une nouvelle image:
+
+```
+$ docker build -t nom_image
 ```
 
-Now for deployment follow my tutorial to implement `app.py` and `app.js`.
+Pour run l'image:
 
-## Watch the Tutorial
-[![Alt text](https://img.youtube.com/vi/a37BL0stIuM/hqdefault.jpg)](https://youtu.be/a37BL0stIuM)  
-[https://youtu.be/a37BL0stIuM](https://youtu.be/a37BL0stIuM)
-
-## Note
-In the video we implement the first approach using jinja2 templates within our Flask app. Only slight modifications are needed to run the frontend separately. I put the final frontend code for a standalone frontend application in the [standalone-frontend](/standalone-frontend) folder.
-
-## Credits:
-This repo was used for the frontend code:
-https://github.com/hitchcliff/front-end-chatjs
+```
+$ drun -c nom_image
+```
