@@ -51,3 +51,9 @@ COPY ./copy/run.sh /usr/
 WORKDIR /menu
 
 CMD /bin/bash /usr/run.sh ${JPORT} ${NPORT}
+
+RUN export LC_CTYPE="en_US.UTF-8"
+
+RUN python3
+    && import nltk
+    && nltk.download('punkt')
