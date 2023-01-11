@@ -15,7 +15,7 @@
     {
       "tag": "Langues",
       "patterns": [
-        "changer de langue"
+        "changer de langue", "change language", "Sprache ändern"
       ],
       "responses": [
         "Choisissez votre langue : anglais, allemand ou français"
@@ -51,7 +51,7 @@
     },
     {
       "tag": "Good bye",
-      "patterns": ["quit", "stop", "Bye"],
+      "patterns": ["quit", "stop", "Bye", "leave", "exit"],
       "responses": [
         "Good bye",
         "Bye"
@@ -59,30 +59,20 @@
     },
     {
       "tag": "Viel spass",
-      "patterns": ["Verlassen"],
+      "patterns": ["Verlassen", "beenden"],
       "responses": [
         "Bis Bald"
       ]
     },
     {
       "tag": "Merci",
-      "patterns": ["Merci", "Merci beaucoup"],
+      "patterns": ["Merci", "Vielen Dank"],
       "responses": ["Ravi d'avoir pu aider", "C'est un plaisir"]
     },
     {
-      "tag": "Sans réponses",
-      "patterns": [],
-      "responses": ["Désolé, je ne vous ai pas compris", "Donnez moi plus d'infos svp", "Je suis pas sur d'avoir compris"]
-    },
-    {
-      "tag": "No answers",
-      "patterns": [],
-      "responses": ["Sorry, can you repeat pls", "I'm not sure I understand it right"]
-    },
-    {
-      "tag": "Keine Antwort",
-      "patterns": [],
-      "responses": ["Entschuldigung, ich habe nicht verstanden"]
+      "tag": "Danke",
+      "patterns": ["Danke", "Merci beaucoup"],
+      "responses": ["Freut mich, dass ich Ihnen helfen konnte", "Es ist ein Vergnügen"]
     },
     {
       "tag": "Options français",
@@ -106,19 +96,504 @@
         "Ich kann infos über die Ausbildung MIK geben"]
     },
     {
-      "tag": "Question 1",
+      "tag": "Mécatronique",
       "patterns": ["Qu'est-ce que la mécatronique?"],
-      "responses": ["C'est une discipline alliant la mécanique, l'électronique et l'informatique pour concevoir des systèmes de production industrielle."]
+      "responses": ["La mécatronique est la combinaison de la mécanique, du génie électrique, de l’automatisme et de l’informatique. Cette pluridisciplinarité permet de concevoir et de mettre en œuvre des systèmes complexes (transports, robotique, production, etc.). La mécatronique se retrouve désormais dans tous les produits techniques et à toutes les étapes de leur cycle de vie."]
     },
     {
-      "tag": "Question 2",
-      "patterns": ["Est-il possible de faire une formation mécatronique à l'INSA de Strasbourg?", "Pouvez-vous m'en dire plus?"],
-      "responses": ["Oui, bien sûr. Il y a la possibilité faire la formation en initial et en apprentissage."]
+      "tag": "Mechatronik",
+      "patterns": ["Was ist Mechatronik?"],
+      "responses": ["Mechatronik ist die Kombination aus Mechanik, Elektrotechnik, Automatisierungstechnik und Informatik. Diese Multidisziplinarität ermöglicht es, komplexe Systeme (Verkehr, Robotik, Produktion usw.) zu entwerfen und zu implementieren. Die Mechatronik findet sich mittlerweile in allen technischen Produkten und in allen Phasen ihres Lebenszyklus."]
     },
     {
-      "tag": "Question 3",
-      "patterns": ["Pouvez-vous m'en dire plus sur la formation par apprentissage ?"],
-      "responses": ["C'est une formation en parcours franco/allemand, avec un rythme d'alternance de 2 semaines d'entreprise et 2 semaines d'école. Il y a un semestre en allemagne à effectuer en 4e année, qui compte dans l'expérience obligatoire à l'étranger que dois réaliser un futur ingénieur."]
+      "tag": "Mecatronics",
+      "patterns": ["What is mechatronics?"],
+      "responses": ["Mechatronics is the combination of mechanical engineering, electrical engineering, automation engineering and computer science. This multidisciplinarity makes it possible to design and implement complex systems (transportation, robotics, production, etc.). Mechatronics can now be found in all technical products and in all phases of their life cycle."]
+    },
+    {
+      "tag": "DeutschINSA : français",
+      "patterns": ["Qu'est-ce que le DeutschINSA ?"],
+      "responses": ["DeutschINSA est la filière franco-allemande de l’INSA Strasbourg. Elle permet à des bacheliers francophones et germanophones de suivre un cursus bilingue et biculturel, menant aux métiers d’ingénieur. A la formation d’ingénieur s’ajoute une connaissance approfondie de la langue allemande et de la culture d’entreprise du monde germanophone. Ce cursus est décliné en trois parcours et concerne essentiellement les deux premières années d’études."]
+    },
+    {
+      "tag": "DeutschINSA : allemand",
+      "patterns": ["Was ist DeutschINSA ?"],
+      "responses": ["DeutschINSA ist der deutsch-französische Studiengang der INSA Strasbourg. Er ermöglicht französisch- und deutschsprachigen Abiturienten, einen zweisprachigen und bikulturellen Studiengang zu absolvieren, der zu einem Ingenieurberuf führt. Zur Ingenieurausbildung kommt eine vertiefte Kenntnis der deutschen Sprache und der Unternehmenskultur der deutschsprachigen Welt hinzu. Dieser Studiengang ist in drei Studiengänge unterteilt und betrifft hauptsächlich die ersten beiden Studienjahre."]
+    },
+    {
+      "tag": "DeutschINSA : anglais",
+      "patterns": ["What is DeutschINSA ?"],
+      "responses": ["DeutschINSA is the Franco-German program at INSA Strasbourg. It allows French and German-speaking students to follow a bilingual and bicultural curriculum, leading to a career in engineering. In addition to the engineering training, the students have a thorough knowledge of the German language and the business culture of the German-speaking world. This program is divided into three tracks and mainly concerns the first two years of study."]
+    },
+    {
+      "tag": "Possibilités",
+      "patterns": ["Est-il possible de faire une formation mécatronique à l'INSA de Strasbourg?", "Pouvez-vous m'en dire plus?", "Est-ce qu'on peut faire la formation en alternance ?", "Peut-on faire la formation en apprentissage ?", "Est-ce que la formation existe seulement par alternance ?"],
+      "responses": ["Oui, bien sûr. Il y a la possibilité faire la formation en initiale ou en apprentissage."]
+    },
+    {
+      "tag": "Möglichkeiten",
+      "patterns": ["Ist es möglich, eine Mechatronik-Ausbildung am INSA Strasbourg zu absolvieren?", "Können Sie mir mehr darüber erzählen?", "Können wir die Ausbildung in Form einer Lehre absolvieren?", "Gibt es die Ausbildung nur in Form eines Dualen Studiums?"],
+      "responses": ["Ja, natürlich. Es gibt die Möglichkeit, eine Erstausbildung oder eine Lehre zu machen."]
+    },
+    {
+      "tag": "Possibilities",
+      "patterns": ["Is it possible to do a mechatronics training at INSA Strasbourg?", "Can you tell me more about it?", "Can we do the training in apprenticeship?", "Does the training exist only by sandwich course?"],
+      "responses": ["Yes, of course. There is the possibility of doing the initial training or apprenticeship."]
+    },
+    {
+      "tag": "FIP : français",
+      "patterns": ["Pouvez-vous m'en dire plus sur la formation par apprentissage ?", "Qu'est-ce que c'est FIP ?"],
+      "responses": ["La formation d’ingénieur en partenariat (FIP) est accessible à partir du Bac+2 sous contrat d’apprentissage (- de 30 ans) ou par la voie de la formation continue (+ de 30 ans). C'est une formation en parcours franco/allemand, avec un rythme d'alternance de 2 semaines d'entreprise et 2 semaines d'école. Il y a un semestre en allemagne à effectuer en 4e année, qui compte dans l'expérience obligatoire à l'étranger que dois réaliser un futur ingénieur."]
+    },
+    {
+      "tag": "FIP : allemand",
+      "patterns": ["Können Sie mir mehr über die Lehrlingsausbildung sagen?", "Was ist FIP?"],
+      "responses": ["Die Ausbildung zum Ingenieur in Partnerschaft (FIP) ist ab dem Bac+2 im Rahmen eines Lehrvertrags (-30 Jahre) oder über den Weg der Weiterbildung (+30 Jahre) zugänglich. Es ist ein deutsch-französischer Studiengang mit einem Wechselrhythmus von zwei Wochen im Unternehmen und zwei Wochen in der Schule. Im vierten Jahr muss ein Semester in Deutschland absolviert werden, das zu der obligatorischen Auslandserfahrung zählt, die ein zukünftiger Ingenieur machen muss."]
+    },
+    {
+      "tag": "FIP : anglais",
+      "patterns": ["Can you tell me more about apprenticeships?", "What is FIP?"],
+      "responses": ["The training of engineer in partnership (FIP) is accessible from the Bac+2 within the framework of an apprenticeship contract (-30 years) or through the path of continuing education (+30 years). It is a Franco-German course of study with an alternating rhythm of two weeks in the company and two weeks in the school. In the fourth year, a semester must be spent in Germany, which is part of the mandatory experience abroad that a future engineer must have."]
+    },
+    {
+      "tag": "Formation académique",
+      "patterns": ["Comment se passe la formation ?", "Comment se découpe la formation à l'école ?", "Avez-vous plus d'informations sur la formation académique ?", "Avez-vous plus de précisions sur la formation académique ?"],
+      "responses": ["Le cursus se déroule sur trois ans et comprend une formation académique assurée par l’INSA Strasbourg, une formation en entreprise ainsi qu’un semestre d’études en Allemagne. Pendant les trois ans de formation, chaque apprenant est suivi par deux tuteurs : un tuteur en entreprise et un tuteur de l’INSA. Leur mission commune est d’accompagner l’apprenant dans son parcours par le biais de fiches de suivi évaluées à la fin de chaque période entreprise, d’un double tutorat sur les projets clés de la formation, de visites du tuteur académique en entreprise, de la participation du tuteur entreprise aux différents jurys de classe ainsi qu’aux conseils de perfectionnement de la formation. Sur les trois ans, la formation comprend 60 semaines de formation académique, dont 20 semaines passées en Allemagne, et 96 semaines de formation en entreprise."]
+    },
+    {
+      "tag": "Akademische Ausbildung",
+      "patterns": ["Wie läuft die Ausbildung ab?", "Wie ist die Ausbildung an der Schule aufgebaut?", "Haben Sie mehr Informationen über die akademische Ausbildung?", "Haben Sie mehr Details über die akademische Ausbildung?"],
+      "responses": ["Der Studiengang erstreckt sich über drei Jahre und umfasst eine akademische Ausbildung, die von der INSA Straßburg durchgeführt wird, eine Ausbildung im Unternehmen sowie ein Studiensemester in Deutschland. Während der dreijährigen Ausbildung wird jeder Lernende von zwei Tutoren betreut: einem Tutor im Unternehmen und einem Tutor an der INSA. Ihre gemeinsame Aufgabe ist es, den Auszubildenden auf seinem Weg zu begleiten, und zwar mithilfe von Verfolgungsbögen, die am Ende jeder betrieblichen Periode ausgewertet werden, einem doppelten Tutorium zu den Schlüsselprojekten der Ausbildung, Besuchen des akademischen Tutors im Unternehmen, der Teilnahme des betrieblichen Tutors an den verschiedenen Klassenjurys sowie an den Fortbildungsräten der Ausbildung. Über die drei Jahre umfasst die Ausbildung 60 Wochen akademische Ausbildung, von denen 20 Wochen in Deutschland verbracht werden, und 96 Wochen Ausbildung im Unternehmen."]
+    },
+    {
+      "tag": "Academic education",
+      "patterns": ["How is the training going?", "How is the education at the school cut out?", "Do you have more information about academic training?", "Do you have more details about academic learning?"],
+      "responses": ["The program lasts three years and includes academic training provided by INSA Strasbourg, in-company training and a semester of study in Germany. During the three years of training, each student is followed by two tutors: a company tutor and an INSA tutor. Their common mission is to accompany the student in his or her training through follow-up sheets evaluated at the end of each company period, double tutoring on key training projects, visits by the academic tutor to the company, and the participation of the company tutor in the various class juries as well as in the training's development boards. Over the three years, the training includes 60 weeks of academic training, including 20 weeks spent in Germany, and 96 weeks of in-company training."]
+    },
+    {
+      "tag": "3e année",
+      "patterns": ["Que fait-on en 3ème année ?", "Que fait-on en dernière année ?"],
+      "responses": ["En 3ème année, les apprentis se consacrent à des approfondissements puis à leur projet de fin d’études en entreprise (PFE)."]
+    },
+    {
+      "tag": "3. Jahr",
+      "patterns": ["Was macht man im dritten Jahr?", "Was macht man im letzten Jahr?"],
+      "responses": ["Im dritten Jahr widmen sich die Auszubildenden Vertiefungen und anschließend ihrem Abschlussprojekt in einem Unternehmen (PFE)."]
+    },
+    {
+      "tag": "3e year",
+      "patterns": ["What do you do in the third year?", "What do you do in the final year?"],
+      "responses": ["In the third year, trainees devote themselves to in-depth studies and then to their final project in a company (PFE)."]
+    },
+    {
+      "tag": "2e année",
+      "patterns": ["Que fait-on en 2ème année ?"],
+      "responses": ["En 2ème année, le premier semestre se déroule principalement en entreprise et donne lieu à un premier projet professionnel, le second semestre est un semestre de formation académique en Allemagne (pas d’alternance de mars à fin juillet)."]
+    },
+    {
+      "tag": "2. Jahr",
+      "patterns": ["Was macht man im zweiten Jahr?"],
+      "responses": ["Im zweiten Jahr findet das erste Semester hauptsächlich in Unternehmen statt und führt zu einem ersten Berufsprojekt, das zweite Semester ist ein akademisches Ausbildungssemester in Deutschland (kein Wechsel von März bis Ende Juli)."]
+    },
+    {
+      "tag": "2nd year",
+      "patterns": ["What do we do in 2nd year?"],
+      "responses": ["In the 2nd year, the first semester is mainly spent in a company and gives rise to a first professional project, the second semester is an academic semester of training in Germany (no alternation from March to the end of July)."]
+    },
+    {
+      "tag": "1e année",
+      "patterns": ["Que fait-on en 1ère année ?"],
+      "responses": ["En 1ère année, les alternances s’opèrent tous les quinze jours (15 jours à l’INSA et 15 jours en entreprise). Elle est portée sur la mise à niveau des élèves. Pour les MIK, il y a des cours d'électronique et de mécanique en commun avec les formations FIP MECA et FIP GE."]
+    },
+    {
+      "tag": "1. Jahr",
+      "patterns": ["Was macht man im ersten Jahr?"],
+      "responses": ["Im ersten Jahr findet der Wechsel alle zwei Wochen statt (15 Tage an der INSA und 15 Tage im Unternehmen). Sie ist darauf ausgerichtet, die Schüler auf den neuesten Stand zu bringen. Für die MIKs gibt es Elektronik- und Mechanikkurse, die mit den Ausbildungen FIP MECA und FIP GE gemeinsam durchgeführt werden."]
+    },
+    {
+      "tag": "1st year",
+      "patterns": ["What do we do in the 1st year?"],
+      "responses": ["In the 1st year, the alternation takes place every 15 days (15 days at INSA and 15 days in the company). It is focused on bringing students up to speed. For the MIKs, there are electronics and mechanics courses in common with the FIP MECA and FIP GE courses."]
+    },
+    {
+      "tag": "Admission MIK apprentissage",
+      "patterns": ["Comment y accéder ?", "Comment accéder à la formation ?", "Quelles sont les écoles pour y accéder ?", "Comment être admis à la formation ?", "Quel parcours faut-il avoir pour accéder à la formation ?"],
+      "responses": ["Vous pouvez venir de différents horizons, comme un DUT, un BTS, une prépa scientifique ou encore une licence. Bien sûr, il faut que ces études aient un rapport avec la mécatronique. Il faut participer à un concours d'entrée, être sélectionné parmi les meilleurs et passer un entretien en allemand, car il ne faut pas oublier que la formation est en parcours franco/allemand. "]
+    },
+    {
+      "tag": "Aufnahme MIK Lehre",
+      "patterns": ["Wie komme ich in die Ausbildung?", "Wie komme ich in die Ausbildung?", "Welche Schulen gibt es?", "Wie werde ich in die Ausbildung aufgenommen?", "Welchen Hintergrund muss ich haben, um in die Ausbildung zu kommen?"],
+      "responses": ["Sie können aus verschiedenen Bereichen kommen, z. B. aus einem DUT, einem BTS, einer wissenschaftlichen Vorschule oder auch einer Licence. Natürlich müssen diese Studiengänge etwas mit Mechatronik zu tun haben. Sie müssen an einem Aufnahmewettbewerb teilnehmen, unter den Besten ausgewählt werden und ein Vorstellungsgespräch auf Deutsch absolvieren, denn man darf nicht vergessen, dass es sich um einen deutsch-französischen Studiengang handelt. "]
+    },
+    {
+      "tag": "Admission MIK apprenticeship",
+      "patterns": ["How to get there?", "How to get to the training?", "What are the schools to get there?", "How to get admitted to the training?", "What background do you need to have to get to the training?"],
+      "responses": ["You can come from different backgrounds, such as a DUT, a BTS, a scientific prep school or even a license. Of course, these studies must be related to mechatronics. You have to take part in an entrance exam, be selected among the best and pass an interview in German, because you have to remember that the training is in a French/German course. "]
+    },
+    {
+      "tag": "Postuler",
+      "patterns": ["Comment postuler ? ", "Où faut-il aller pour postuler ?"],
+      "responses": ["Vous pouvez postuler sur le site de l'ITII Alsace (Institut des techniques d'ingénieur de l'industrie d'Alsace) qui est en partenariat avec la formation."]
+    },
+    {
+      "tag": "Bewerben",
+      "patterns": ["Wie bewirbt man sich? ", "Wo muss man hingehen, um sich zu bewerben?"],
+      "responses": ["Sie können sich auf der Website des ITII Alsace (Institut des techniques d'ingénieur de l'industrie d'Alsace) bewerben, das mit der Ausbildung zusammenarbeitet."]
+    },
+    {
+      "tag": "Apply",
+      "patterns": ["How to apply?", "Where to apply?"],
+      "responses": ["You can apply on the website of ITII Alsace (Institut des techniques d'ingénieur de l'industrie d'Alsace) which is in partnership with the training."]
+    },
+    {
+      "tag": "INSA Strasbourg : français",
+      "patterns": ["Qu'est ce que l'INSA Strasbourg ?"],
+      "responses": ["L'INSA (Institut National des Sciences et Appliquées) de Strasbourg est une école d'ingénieur française accréditée à délivrer un diplôme d'ingénieur ainsi qu'un diplôme d'architecte. Le diplôme d’ingénieur équivaut au grade universitaire de Master (bac+5), il est inscrit au répertoire des certifications professionnelles (RNCP)."]
+    },
+    {
+      "tag": "INSA Strasbourg : allemand",
+      "patterns": ["Was ist die INSA Straßburg?"],
+      "responses": ["Das INSA (Institut National des Sciences et Appliquées) de Strasbourg ist eine französische Ingenieurschule, die ein Ingenieurdiplom und ein Architektendiplom verleihen darf. Das Ingenieurdiplom entspricht dem akademischen Grad Master (bac+5) und ist im Verzeichnis der beruflichen Befähigungsnachweise (RNCP) eingetragen."]
+    },
+    {
+      "tag": "INSA Strasbourg : anglais",
+      "patterns": ["What is INSA Strasbourg?"],
+      "responses": ["INSA (Institut National des Sciences et Appliquées) Strasbourg is a French engineering school accredited to deliver an engineering degree as well as an architecture degree. The engineering degree is equivalent to the university grade of Master (bac+5), it is registered in the repertoire of professional certifications (RNCP)."]
+    },
+    {
+      "tag": "Objectifs DeutschINSA",
+      "patterns": ["Quel sont les objectifs du DeutschINSA ?"],
+      "responses": ["L’objectif de cette filière est de développer la capacité d’adaptation et d’innovation des étudiants, de leur permettre d’intégrer les deux cultures de travail francophone et germanophone et d’être ainsi à même de comprendre leurs futurs partenaires industriels. Cette filière vise à répondre aux défis de l’interculturalité et de l’employabilité de futurs ingénieurs auxquels sont confrontées de nombreuses entreprises françaises et allemandes. DeutschINSA aspire à former des étudiants qui se sentiront autant à l’aise dans le monde francophone que dans le monde germanophone."]
+    },
+    {
+      "tag": "DeutschINSA-Ziele",
+      "patterns": ["Was sind die Ziele von DeutschINSA?"],
+      "responses": ["Ziel dieses Studiengangs ist es, die Anpassungs- und Innovationsfähigkeit der Studierenden zu fördern, ihnen die Integration der beiden Arbeitskulturen Deutsch und Französisch zu ermöglichen und sie so in die Lage zu versetzen, ihre zukünftigen Industriepartner zu verstehen. Dieser Studiengang soll den Herausforderungen der Interkulturalität und der Beschäftigungsfähigkeit zukünftiger Ingenieure gerecht werden, mit denen viele deutsche und französische Unternehmen konfrontiert sind. DeutschINSA strebt die Ausbildung von Studenten an, die sich in der französischsprachigen Welt ebenso wohl fühlen wie in der deutschsprachigen."]
+    },
+    {
+      "tag": "DeutschINSA objectives",
+      "patterns": ["What are the objectives of DeutschINSA?"],
+      "responses": ["The objective of this program is to develop students' ability to adapt and innovate, to enable them to integrate the two French and German-speaking work cultures and thus be able to understand their future industrial partners. This program aims to meet the challenges of interculturality and employability of future engineers that many French and German companies are facing. DeutschINSA aims to train students who will feel equally at home in the French-speaking world as in the German-speaking world."]
+    },
+    {
+      "tag": "Objectifs MIK apprentissage",
+      "patterns": ["Quel est l'objectif de la formation ?", "Quels sont les objectifs ?"],
+      "responses": ["Former des ingénieurs de terrain, polyvalents et directement opérationnels dans les domaines de la mécanique, de l’informatique et de l’électronique, et ceci dans un contexte franco-allemand."]
+    },
+    {
+      "tag": "MIK-Ziele Lernen",
+      "patterns": ["Was ist das Ziel der Ausbildung?", "Was sind die Ziele?"],
+      "responses": ["Ausbildung von vielseitigen und direkt einsetzbaren Ingenieuren in den Bereichen Mechanik, Informatik und Elektronik in einem deutsch-französischen Kontext"]
+    },
+    {
+      "tag": "MIK learning objectives",
+      "patterns": ["What is the objective of the training?", "What are the objectives?"],
+      "responses": ["To train engineers in the field, versatile and directly operational in the fields of mechanics, computer science and electronics, and this in a Franco-German context."]
+    },
+    {
+      "tag": "Répartition",
+      "patterns": ["Comment est réparti la formation académique et la formation en entreprise ?", "Quelle est la répartition des cours entre école et apprentissage ?"],
+      "responses": ["Sur les trois ans, la formation comprend 60 semaines de formation académique, dont 20 semaines passées en Allemagne, et 96 semaines de formation en entreprise."]
+    },
+    {
+      "tag": "Aufteilung",
+      "patterns": ["Wie ist die akademische und die betriebliche Ausbildung aufgeteilt?", "Wie ist die Aufteilung der Kurse zwischen Schule und Ausbildung?"],
+      "responses": ["In den drei Jahren umfasst die Ausbildung 60 Wochen akademische Ausbildung, von denen 20 Wochen in Deutschland verbracht werden, und 96 Wochen betriebliche Ausbildung"]
+    },
+    {
+      "tag": "Breakdown",
+      "patterns": ["How is the academic training and the company training divided?", "What is the course division between school and apprenticeship?"],
+      "responses": ["Over the three years, the training consists of 60 weeks of academic training, of which 20 weeks are spent in Germany, and 96 weeks of in-company training."]
+    },
+    {
+      "tag": "Formation en entreprise",
+      "patterns": ["Comment se passe la formation en entreprise ?", "Avez-vous plus de précisions sur la formation en entreprise ?", "Avez-vous plus d'informations sur la formation en entreprise ?"],
+      "responses": ["L’entreprise d’accueil a pour mission d’accompagner l’apprenant dans son évolution de la fonction de technicien à celle d’ingénieur. Des objectifs de formation sont définis pour chaque année du cursus : connaissance de l’entreprise, de son environnement et participation à la réalisation de missions techniques en 1ère année, réalisation de projets d’envergure croissante en 2ème année, concrétisation des connaissances acquises par la conduite en autonomie d’un projet « complexe » en 3ème année."]
+    },
+    {
+      "tag": "Betriebliche Ausbildung",
+      "patterns": ["Wie läuft die betriebliche Ausbildung ab?", "Haben Sie weitere Informationen über die betriebliche Ausbildung?", "Haben Sie weitere Informationen über die betriebliche Ausbildung?"],
+      "responses": ["Das Gastunternehmen hat die Aufgabe, den Auszubildenden bei seiner Entwicklung vom Techniker zum Ingenieur zu unterstützen. Für jedes Jahr des Studiengangs werden Ausbildungsziele festgelegt: Kenntnis des Unternehmens, seines Umfelds und Teilnahme an der Durchführung technischer Aufgaben im ersten Jahr, Durchführung von Projekten mit zunehmendem Umfang im zweiten Jahr, Konkretisierung der erworbenen Kenntnisse durch die selbstständige Durchführung eines « komplexen » Projekts im dritten Jahr."]
+    },
+    {
+      "tag": "In-company training",
+      "patterns": ["How is the in-company training?", "Do you have more details about the in-company training?", "Do you have more information about the in-company training?"],
+      "responses": ["The host company's mission is to accompany the learner in his or her evolution from technician to engineer. Training objectives are defined for each year of the curriculum: knowledge of the company, its environment and participation in technical missions in the 1st year, realization of projects of increasing scope in the 2nd year, concretization of the knowledge acquired through the autonomous management of a « complex » project in the 3rd year."]
+    },
+    {
+      "tag": "Cadre franco/allemand",
+      "patterns": ["Pouvez-vous me donner plus de précisions sur le cadre franco/allemand ?", "En quoi consiste le cadre franco/allemand ?"],
+      "responses": ["Cette formation se déroule dans un cadre franco-allemand : \n - environnement de travail franco-allemand (clients, fournisseurs, documentation) en entreprise \n - cours d’allemand et certains enseignements techniques en allemand à l’INSA Strasbourg qui préparent à \n - un semestre de cours en Allemagne (Hochschule Karlsruhe ou Hochschule Offenburg) avec possibilité de double diplôme. \n Il est possible d’effectuer la formation en entreprise dans une entreprise allemande, dans le cadre du dispositif d’apprentissage transfrontalier (textes législatifs en cours d’évolution, il est nécessaire de se renseigner et d’anticiper si vous souhaitez bénéficier de ce dispositif)."]
+    },
+    {
+      "tag": "Deutsch-französischer Rahmen",
+      "patterns": ["Können Sie mir mehr über den deutsch-französischen Rahmen erzählen?", "Worum geht es im deutsch-französischen Rahmen?"],
+      "responses": ["Diese Ausbildung findet in einem deutsch-französischen Rahmen statt: \n - deutsch-französisches Arbeitsumfeld (Kunden, Lieferanten, Dokumentation) im Unternehmen \n - Deutschkurse und einige technische Lehrveranstaltungen auf Deutsch an der INSA Strasbourg, die auf \n - ein Semester in Deutschland (Hochschule Karlsruhe oder Hochschule Offenburg) mit der Möglichkeit eines Doppeldiploms vorbereiten. \n Es ist möglich, die betriebliche Ausbildung in einem deutschen Unternehmen im Rahmen der grenzüberschreitenden Ausbildung zu absolvieren (die Gesetzestexte werden derzeit weiterentwickelt, Sie müssen sich informieren und vorausschauend handeln, wenn Sie von dieser Regelung profitieren möchten)."]
+    },
+    {
+      "tag": "Franco-German framework",
+      "patterns": ["Can you give me more details about the Franco-German framework?", "What is the Franco-German framework?"],
+      "responses": ["This training takes place in a Franco-German framework: \n - Franco-German working environment (customers, suppliers, documentation) in a company \n - German courses and certain technical courses in German at INSA Strasbourg which prepare for \n - a semester of courses in Germany (Hochschule Karlsruhe or Hochschule Offenburg) with the possibility of a double degree. \nIt is possible to do the in-company training in a German company, within the framework of the cross-border apprenticeship scheme (legislation is currently being amended, it is necessary to find out more and to anticipate if you wish to benefit from this scheme)."]
+    },
+    {
+      "tag": "IUT Louis Pasteur : français",
+      "patterns": ["Pouvez-vous m'en dire plus sur le partenariat entre l'INSA et l'IUT Louis Pasteur ?"],
+      "responses": ["L’objectif est de permettre aux étudiants germanistes de l’IUT de maintenir et améliorer leurs compétences linguistiques en vue d’intégrer la formation d’ingénieur en mécatronique en partenariat grâce à une voie spécifique d’admission. \n Cela concerne les étudiants des DUT génie industriel et maintenance (GIM) et mesures physiques (MP), d’une part, et la formation d’ingénieur en partenariat en mécatronique (FIP mécatronique), d’autre part, et plus généralement les formations d’ingénieurs en partenariat (alternance) de l’INSA Strasbourg et les cursus DeutschINSA."]
+    },
+    {
+      "tag": "IUT Louis Pasteur : allemand",
+      "patterns": ["Können Sie mir mehr über die Partnerschaft zwischen INSA und dem IUT Louis Pasteur erzählen?"],
+      "responses": ["Ziel ist es, den germanistischen Studierenden des IUT die Möglichkeit zu geben, ihre Sprachkenntnisse zu erhalten und zu verbessern, um über einen speziellen Zulassungsweg in den partnerschaftlichen Ingenieurstudiengang Mechatronik einsteigen zu können. \nDies betrifft die Studierenden der DUTs génie industriel et maintenance (GIM) und mesures physiques (MP) einerseits und der partnerschaftlichen Ingenieurausbildung in Mechatronik (FIP mécatronique) andererseits sowie generell die partnerschaftlichen Ingenieurausbildungen (alternance) der INSA Strasbourg und die DeutschINSA-Studiengänge."]
+    },
+    {
+      "tag": "IUT Louis Pasteur : anglais",
+      "patterns": ["Can you tell me more about the partnership between INSA and IUT Louis Pasteur?"],
+      "responses": ["The objective is to allow German-speaking students of the IUT to maintain and improve their language skills in order to integrate the engineering training in mechatronics in partnership thanks to a specific admission path. \nThis concerns the students of the DUT industrial engineering and maintenance (GIM) and physical measures (MP), on the one hand, and the training of engineer in partnership in mechatronics (FIP mechatronics), on the other hand, and more generally the training of engineers in partnership (alternation) of the INSA Strasbourg and the DeutschINSA courses."]
+    },
+    {
+      "tag": "Compétences d'un ingénieur",
+      "patterns": ["Quelles sont les compétences d'un ingénieur en mécatronique ?"],
+      "responses": ["La démarche mécatronique nécessite de penser le produit dans son ensemble et requiert chez l’ingénieur en mécatronique des connaissances pluridisciplinaires et des compétences générales en sciences de l’ingénieur pouvant être approfondies selon les besoins. \n Compétences générales d’un ingénieur mécatronique de l’INSA Strasbourg : \n - effectuer la conception mécanique d’un système (méthodologie de développement de produit, conception assistée par ordinateur, dimensionnement) \n - choisir et implanter les actionneurs, préactionneurs et les capteurs \n - réaliser des programmations simples dans un système embarqué \n - concevoir et réaliser des cartes électroniques simples \n - mettre en œuvre une production sur machine-outil \n - mettre en place un banc d’essai \n - concevoir un système industriel automatisé en prenant en compte les différentes parties (mécaniques, électrique, automatique, etc.) et le mettre en œuvre (volet « industrie 4.0 ») \n Plus spécifiquement, l’ingénieur mécatronique par alternance se positionne dans l’intégration d’équipements et technologies. \n A ce titre, il  intervient en conception et en production autour de thématiques « Usine du futur / Industrie 4.0 » \n - en conception de machines et de produits connectés (p.ex. intégration de capteurs et traitement du signal,  conception et modélisation de la partie commande (jumeau numérique…)) \n - en production, il est capable d’agir au niveau d’un poste en assurant l’intégration d’un procédé sur un équipement connecté (intégration de robots/ cobots sur une ligne de production, intégration des problématiques de bus de terrain ou de réseaux IP…)"]
+    },
+    {
+      "tag": "Fähigkeiten eines Ingenieurs",
+      "patterns": ["Was sind die Kompetenzen eines Mechatronik-Ingenieurs?"],
+      "responses": ["Der mechatronische Ansatz erfordert, das Produkt als Ganzes zu betrachten, und verlangt von einem Mechatronik-Ingenieur multidisziplinäre Kenntnisse und allgemeine Kompetenzen in den Ingenieurwissenschaften, die je nach Bedarf vertieft werden können. \n General competencies of an INSA Strasbourg Mechatronics Engineer: \n - perform the mechanical design of a system (product development methodology, computer-aided design, dimensioning) \n - choose and implement actuators, pre-actors and sensors \n - Einfache Programmierungen in einem eingebetteten System durchführen °n - Einfache elektronische Karten entwerfen und herstellen °n - Eine Produktion auf einer Werkzeugmaschine durchführen °n - Einen Prüfstand einrichten °n - Ein automatisiertes Industriesystem unter Berücksichtigung der verschiedenen Teile (mechanisch, elektrisch, automatisch, etc.) entwerfen und es umsetzen (Teilbereich Industrie 4.0) °n Im Besonderen positioniert sich der Mechatronikingenieur im Rahmen eines dualen Studiums in der Integration von Geräten und Technologien. \n diesem Zusammenhang greift er in die Konzeption und Produktion rund um die Themen Fabrik der Zukunft / Industrie 4.0 ein. \n - in der Konzeption von Maschinen und vernetzten Produkten (z.B. Integration von Sensoren und Signalverarbeitung, Konzeption und Modellierung des Steuerungsteils (digitaler Zwilling...)). \n - in der Produktion, sie sind in der Lage, an einem Arbeitsplatz zu agieren, indem sie die Integration eines Prozesses in ein vernetztes Gerät sicherstellen (Integration von Robotern/Cobots in eine Produktionslinie, Integration von Feldbus- oder IP-Netzwerkproblemen...)"]
+    },
+    {
+      "tag": "Skills of an engineer",
+      "patterns": ["What are the skills of a mechatronics engineer?"],
+      "responses": ["The mechatronic approach requires to think the product as a whole and requires from the mechatronic engineer multidisciplinary knowledge and general skills in engineering sciences that can be deepened according to the needs. \nGeneral skills of a mechatronics engineer from INSA Strasbourg: \n - carry out the mechanical design of a system (product development methodology, computer-aided design, sizing) \n - choose and implement actuators, pre-actuators and sensors \n - carry out simple programming in an embedded system \n - design and produce simple electronic cards \n - implement production on a machine tool \n - set up a test bench \n - design an automated industrial system taking into account the different parts (mechanical, electrical, automatic, etc.. More specifically, the mechatronics engineer by alternation is positioned in the integration of equipment and technologies. \nIn this respect, he/she is involved in design and production around the themes of Factory of the Future / Industry 4.0. \nIn the design of machines and connected products (e.g. integration of sensors and signal processing, design and modelling of the control part (digital twin, etc.)) \n - in production, he or she is able to act at a workstation level by ensuring the integration of a process on a connected equipment (integration of robots/cobots on a production line, integration of fieldbus or IP network issues...)"]
+    },
+    {
+      "tag": "Débouchés",
+      "patterns": ["Quels sont les débouchés après le diplome ?", "Quels sont les débouchés de la formation ?", "Que peut-on faire après l'école ?"],
+      "responses": ["- bureaux d’études : responsable de la conception ou de l’amélioration des produits ou des procédés \n - production : préparation de la production, investissements, automatisation, machines spéciales, intégration robotique \n - services de test, contrôle, bancs d’essais, validation, qualité... \n - ingénierie et conseil : études d’organisation, projets techniques \n - autres fonctions technico-économiques \n Possibilités de poursuite du parcours académique : \n Suite à cette formation, les apprenants peuvent poursuivre leurs études sur les thématiques suivantes : \n - thèse ou concours de l’éducation nationale \n - formation de spécialisation technique (SupAéro….) \n - formation de management (Essec, EM Strasbourg…)"]
+    },
+    {
+      "tag": "Berufsaussichten",
+      "patterns": ["Welche Möglichkeiten gibt es nach dem Abschluss?", "Welche Perspektiven bietet die Ausbildung?", "Was kann man nach der Schule machen?"],
+      "responses": ["- Konstruktionsbüros: verantwortlich für die Konzeption oder Verbesserung von Produkten oder Verfahren \n - Produktion: Produktionsvorbereitung, Investitionen, Automatisierung, Spezialmaschinen, Roboterintegration \n - Test- und Kontrollabteilungen, Prüfstände, Validierung, Qualität... \n - engineering and consulting: organization studies, technical projects \n - other technico-economic functions \n Möglichkeiten zur Fortsetzung der akademischen Laufbahn : \n Nach dieser Ausbildung können die Lernenden ihre Studien in den folgenden Themenbereichen fortsetzen: \n - Dissertation oder Auswahlverfahren im Bildungswesen \n - technische Spezialisierungsausbildung (SupAero....) \n - Managementausbildung (Essec, EM Strasbourg...)"]
+    },
+    {
+      "tag": "Outlets",
+      "patterns": ["What are the opportunities after the diploma?", "What are the possibilities of the training?", "What can you do after the school?"],
+      "responses": ["- design offices: responsible for the design or improvement of products or processes \n - production: production preparation, investments, automation, special machines, robotic integration \n - test services, control, test benches, validation, quality... \n - engineering and consulting : organization studies, technical projects \n - other technical-economic functions \n Possibilities of pursuing the academic path : \nFollowing this training, learners can continue their studies on the following themes: \n - thesis or national education exam \n - technical specialization training (SupAéro....) \n - management training (Essec, EM Strasbourg...)"]
+    },
+    {
+      "tag": "Débouchés école",
+      "patterns": ["Est-ce qu'on peut continuer les études après l'INSA ?", "Est-ce qu'on peut faire un doctorat ?"],
+      "responses": ["Possibilités de poursuite du parcours académique : \n Suite à cette formation, les apprenants peuvent poursuivre leurs études sur les thématiques suivantes : \n - thèse ou concours de l’éducation nationale \n - formation de spécialisation technique (SupAéro….) \n - formation de management (Essec, EM Strasbourg…)"]
+    },
+    {
+      "tag": "Berufsmöglichkeiten an der Schule",
+      "patterns": ["Kann man nach dem INSA-Studium weiterstudieren?", "Kann man eine Doktorarbeit schreiben?"],
+      "responses": ["Möglichkeiten der Fortsetzung des akademischen Werdegangs : \n Nach dieser Ausbildung können die Lernenden ihre Studien in den folgenden Themenbereichen fortsetzen: \n - Dissertation oder Auswahlverfahren im Bildungswesen \n - technische Spezialisierung (SupAero....) \n - Managementausbildung (Essec, EM Strasbourg...)"]
+    },
+    {
+      "tag": "School opportunities",
+      "patterns": ["Can we continue our studies after INSA?", "Can we do a PhD?"],
+      "responses": ["Possibilities for continuing academic career : \nFollowing this training, learners can continue their studies on the following topics: \n - thesis or national education exam \n - technical specialization training (SupAéro....) \n - management training (Essec, EM Strasbourg...)"]
+    },
+    {
+      "tag": "Chiffres clés",
+      "patterns": ["Quels sont les chiffres clés ?", "Combien gagne un ingénieur en mécatronique après le diplome ?", "Combien y'a t'il de place dans la formation mécatronique ?", "Quel est le taux de réussite ?"],
+      "responses": ["Places offertes en formation : 14 \n Taux de réussite au diplôme en 2021 : 88% \n Employabilité (enquête insertion 2021) : \n - taux de placement 2 mois après l’obtention du diplôme : 67% \n - durée moyenne de recherche d’emploi : 1,5 mois \n - salaire brut annuel médian France : 37 k€"]
+    },
+    {
+      "tag": "Schlüsselzahlen",
+      "patterns": ["Was sind die Schlüsselzahlen?", "Wie viel verdient ein Mechatronik-Ingenieur nach seinem Abschluss?", "Wie viele Ausbildungsplätze gibt es in der Mechatronik-Ausbildung?", "Wie hoch ist die Erfolgsquote?"],
+      "responses": ["Offene Ausbildungsplätze: 14 \nErfolgsquote bei Abschluss 2021: 88% \nEinsetzbarkeit (Eingliederungsumfrage 2021) : \n - Vermittlungsquote 2 Monate nach Abschluss: 67% \n - Durchschnittliche Dauer der Arbeitssuche: 1,5 Monate \n - Median Bruttojahresgehalt Frankreich: 37 k€"]
+    },
+    {
+      "tag": "Key figures",
+      "patterns": ["What are the key figures?", "How much does a mechatronics engineer earn after graduation?", "How many places are there in the mechatronics training?", "What is the success rate?"],
+      "responses": ["Places offered in training : 14 \nSuccess rate to the diploma in 2021 : 88% \nEmployability (insertion survey 2021) : \n - placement rate 2 months after graduation: 67% \n - average duration of job search: 1.5 months \n - median gross annual salary France: 37 k€"]
+    },
+    {
+      "tag": "PFE : français",
+      "patterns": ["Qu'est-ce qu'un PFE ?", "Qu'est-ce qu'un projet de fin d'étude en entreprise?"],
+      "responses": ["Le PFE, projet de fin d’études, et le stage de fin d’études recouvrent une même réalité. Il s’agit d’une période déterminée durant laquelle l’étudiant rejoint une entreprise afin de réaliser un projet. En France, le PFE marque la fin du cursus en école d’ingénieur ou à l’université. Le stage de fin d’études correspond au cadre légal dans lequel s’effectue le projet de fin d’études."]
+    },
+    {
+      "tag": "PFE : allemand",
+      "patterns": ["Was ist ein PFE?", "Was ist ein Abschlussprojekt in einem Unternehmen?"],
+      "responses": ["Das PFE (projet de fin d'études) und das Praktikum am Ende des Studiums decken ein und dieselbe Realität ab. Es handelt sich um einen bestimmten Zeitraum, in dem die Studierenden in einem Unternehmen arbeiten, um ein Projekt zu realisieren. In Frankreich markiert das PFE den Abschluss des Studiums an einer Ingenieurschule oder Universität. Das Abschlusspraktikum entspricht dem rechtlichen Rahmen, in dem das Abschlussprojekt durchgeführt wird."]
+    },
+    {
+      "tag": " PFE : anglais",
+      "patterns": ["What is a PFE?", "What is an end of study project in a company?"],
+      "responses": ["The PFE, end-of-study project, and the end-of-study internship cover the same reality. It is a specific period during which the student joins a company in order to carry out a project. In France, the PFE marks the end of the engineering school or university curriculum. The end-of-study internship corresponds to the legal framework in which the end-of-study project is carried out."]
+    },
+    {
+      "tag": "Semestre en allemagne",
+      "patterns": ["En quoi consiste ce semestre en allemagne ?"],
+      "responses": ["Ce semestre est réalisé dans le cadre franco/allemand de la formation et qui par la même occasion compte dans l'expérience à l'internationale obligatoire à effectuer lors d'un diplôme d'ingénieur. \n Il faut choisir un cursus qui a un rapport avec la mécatronique (mécanique, électronique, robotique, ...)."]
+    },
+    {
+      "tag": "Semester in Deutschland",
+      "patterns": ["Worum geht es bei diesem Semester in Deutschland?"],
+      "responses": ["Dieses Semester wird im Rahmen des deutsch-französischen Studiengangs absolviert und zählt somit zu den obligatorischen Auslandserfahrungen, die bei einem Ingenieurstudium zu absolvieren sind. \nSie sollten einen Studiengang wählen, der mit Mechatronik zu tun hat (Mechanik, Elektronik, Robotik, ...)."]
+    },
+    {
+      "tag": "Semester in Germany",
+      "patterns": ["What does this semester in Germany consist of?"],
+      "responses": ["This semester is part of the Franco-German training program and at the same time counts as part of the compulsory international experience required for an engineering degree. \nIt is necessary to choose a course of study related to mechatronics (mechanics, electronics, robotics, etc.)."]
+    },
+    {
+      "tag": "Matières",
+      "patterns": ["Quelles sont les matières pendant le cursus ?", "Quels sont les cours enseignés ?"],
+      "responses": ["La formation couvre plein de matières différentes : \n - mécanique \n - électronique \n - automatisme \n - informatique \n - logisitique \n - langues (allemand et anglais) \n - et bien d'autres matières ..."]
+    },
+    {
+      "tag": "Fächer",
+      "patterns": ["Welche Fächer gibt es während des Studiums?", "Welche Kurse werden unterrichtet?"],
+      "responses": ["Die Ausbildung umfasst viele verschiedene Fächer: \n - Mechanik \n - Elektronik \n - Automatisierungstechnik \n - Informatik \n - Logistik \n - Sprachen (Deutsch und Englisch) \n - und viele andere Fächer ..."]
+    },
+    {
+      "tag": "Subjects",
+      "patterns": ["What are the subjects during the course?", "What courses are taught?"],
+      "responses": ["The course covers a lot of different subjects: \n - mechanics \n - electronics \n - automation \n - computer science \n - logistics \n - languages (German and English) \n - and many other subjects..."]
+    },
+    {
+      "tag": "Horaires",
+      "patterns": ["Combien d'heures de cours y'a t'il ?"],
+      "responses": ["Je vous renvoie vers le programme détaillé de la formation : http://www.insa-strasbourg.fr/fr/programme-des-etudes/"]
+    },
+    {
+      "tag": "Stundenplan",
+      "patterns": ["Wie viele Stunden Unterricht gibt es?"],
+      "responses": ["Ich verweise Sie auf den detaillierten Lehrplan: http://www.insa-strasbourg.fr/fr/programme-des-etudes/"]
+    },
+    {
+      "tag": "schedules",
+      "patterns": ["How many hours of classes are there?"],
+      "responses": ["I refer you to the detailed training program: http://www.insa-strasbourg.fr/fr/programme-des-etudes/"]
+    },
+    {
+      "tag": "Aménagement",
+      "patterns": ["Est-il possible d'avoir un aménagement des horaires par rapport à un job étudiant ou sportif de haut niveau?"],
+      "responses": [""]
+    },
+    {
+      "tag": "Coût",
+      "patterns": ["Quel est le coût de la formation ?", "Combien coûte la formation ?", "Combien coûte l'école ?"],
+      "responses": ["L'INSA est une école publique, mais il y a des frais scolaires à prévoir quand même. Pour les alternants, les frais de dossier sont pris en charge par l'entreprise d'accueil mais il faudra tout de même payer la CVEC qui est de l'ordre de 90€ chaque année. Pour les initiaux, il faudra rajouter à cela les frais de dossier qui sont de l'ordre de 500€ chaque année."]
+    },
+    {
+      "tag": "Kosten",
+      "patterns": ["Was kostet die Ausbildung?", "Wie viel kostet die Ausbildung?", "Wie viel kostet die Schule?"],
+      "responses": ["Das INSA ist eine öffentliche Schule, aber es gibt trotzdem Schulgebühren, mit denen man rechnen muss. Für die dual Studierenden werden die Kosten vom Gastunternehmen übernommen, aber Sie müssen trotzdem die CVEC bezahlen, die sich jedes Jahr auf 90€ beläuft. Bei Studienanfängern kommen noch Bearbeitungsgebühren hinzu, die jedes Jahr etwa 500€ betragen."]
+    },
+    {
+      "tag": "Cost",
+      "patterns": ["How much does it cost?", "How much does it cost?", "How much does the school cost?"],
+      "responses": ["INSA is a public school, but there are school fees to expect anyway. For the alternating students, the application fees are taken care of by the host company but you will still have to pay the CVEC which is about 90€ each year. For initials, you will have to add to that the application fees which are about 500€ each year."]
+    },
+    {
+      "tag": "Double diplôme",
+      "patterns": ["Est-ce que la formation à un équivalent dans les autres pays ?", "Le dipôme est-il valable en Allemagne aussi ?"],
+      "responses": ["A l’issue des trois premières années, les étudiants peuvent poursuivre leurs études dans le cadre d’un double diplôme au niveau master (http://www.insa-strasbourg.fr/fr/doubles-diplomes/?menu=relations-internationales&parent_label=Mobilité+à+l%27étranger) avec un établissement allemand ou autrichien : \nen topographie avec l’Université de Karlsruhe, en génie civil avec l’Université Technique de Dresde, en génie climatique et énergétique avec la Fachhochschule de Haute-Autriche à Wels, en génie électrique, en génie mécanique et en mécatronique avec la Hochschule Karlsruhe, et en génie mécanique et en mécatronique avec la Hochschule Offenburg). \nPour ce qui est de la filière par apprentissage : ce n'est pas un double diplôme, mais il peut y avoir une mention du semestre passé en Allemagne. Vous pouvez faire valoir votre semestre en Allemagne et continuer après le diplôme pour obtenir un double diplôme."]
+    },
+    {
+      "tag": "Doppelter Abschluss",
+      "patterns": ["Gibt es ein Äquivalent in anderen Ländern?", "Ist das Diplom auch in Deutschland gültig?"],
+      "responses": ["Nach den ersten drei Jahren können die Studierenden ihr Studium im Rahmen eines Doppeldiploms auf Masterniveau (http://www.insa-strasbourg.fr/fr/doubles-diplomes/?menu=relations-internationales&parent_label=Mobilité+im+l%27Ausland) mit einer deutschen oder österreichischen Einrichtung fortsetzen: \nIn Topographie mit der Universität Karlsruhe, in Bauingenieurwesen mit der Technischen Universität Dresden, in Klima- und Energietechnik mit der Fachhochschule Oberösterreich in Wels, in Elektrotechnik, Maschinenbau und Mechatronik mit der Hochschule Karlsruhe und in Maschinenbau und Mechatronik mit der Hochschule Offenburg). \nWas den Studiengang mit Lehre betrifft: Es handelt sich nicht um einen Doppelabschluss, aber es kann eine Erwähnung des in Deutschland verbrachten Semesters geben. Sie können Ihr Semester in Deutschland anrechnen lassen und nach dem Abschluss weitermachen, um einen Doppelabschluss zu erhalten."]
+    },
+    {
+      "tag": "Double degree",
+      "patterns": ["Does the training have an equivalent in other countries?", "Is the dipoma valid in Germany as well?"],
+      "responses": ["After the first three years, students can continue their studies in a double degree program at the master level (http://www.insa-strasbourg.fr/fr/doubles-diplomes/?menu=relations-internationales&parent_label=Mobilité+to+l%27abroad) with a German or Austrian institution : \nin topography with the University of Karlsruhe, in civil engineering with the Technical University of Dresden, in climate and energy engineering with the Fachhochschule of Upper Austria in Wels, in electrical engineering, mechanical engineering and mechatronics with the Hochschule Karlsruhe, and in mechanical engineering and mechatronics with the Hochschule Offenburg). \nAs for the apprenticeship program, it is not a double degree, but there may be a mention of the semester spent in Germany. You can credit your semester in Germany and continue after graduation for a double degree."]
+    },
+    {
+      "tag": "Etranger",
+      "patterns": ["Est-ce que c’est obligatoire de faire une année à l’étranger ?", "Peut-on faire une année à l’étranger ?", "Doit-on faire l’année à l’étranger en Allemagne ?"],
+      "responses": ["Le diplôme d'ingénieur exige une expérience de minimum 1 mois à l'étranger. Cette expérience est réalisée par le semestre en allemagne pour les FIP mécatronique, mais cela peut être dans d'autres pays si c'est dans un cadre différent du DeutschINSA."]
+    },
+    {
+      "tag": "Ausland",
+      "patterns": ["Muss man ein Jahr im Ausland verbringen?", "Kann man ein Jahr im Ausland verbringen?", "Muss man das Auslandsjahr in Deutschland absolvieren?"],
+      "responses": ["Der Abschluss in Ingenieurwesen erfordert eine mindestens einmonatige Auslandserfahrung. Diese Erfahrung wird durch das Semester in Deutschland für die FIP Mechatronik realisiert, aber es kann auch in anderen Ländern sein, wenn es in einem anderen Rahmen der DeutschINSA ist."]
+    },
+    {
+      "tag" : "Foreign",
+      "patterns" : ["Do you have to spend a year abroad?", "Can you spend a year abroad?"],
+      "responses" : ["The engineering degree requires at least one month of experience abroad. This experience is done by the semester in Germany for the Mechatronics FIP, but it can also be in other countries if it is in another DeutschINSA framework"]
+    },
+    {
+      "tag": "Niveau allemand",
+      "patterns": ["Quel niveau d'allemand doit-on avoir pour rentrer dans la formation ?"],
+      "responses": ["Il faut avoir un niveau entre B1 et B2."]
+    },
+    {
+      "tag": "Deutschkenntnisse",
+      "patterns": ["Wie gut muss man Deutsch sprechen, um in den Kurs aufgenommen zu werden?"],
+      "responses": ["Das Sprachniveau sollte zwischen B1 und B2 liegen."]
+    },
+    {
+      "tag": "German level",
+      "patterns": ["What level of German do you need to have to enter the course?"],
+      "responses": ["You need a level between B1 and B2."]
+    },
+    {
+      "tag": "Plus d'infos",
+      "patterns": ["Où puis-je avoir plus d'informations ?", "Est-ce que l'INSA à un site internet ?"],
+      "responses": ["Pour plus d'informations, rendez-vous sur la page de la formation : http://www.insa-strasbourg.fr/fr/mecatronique-par-alternance-franco-allemand/?menu=formation&parent_label=L’ingénieur·e+INSA ou alors sur le site de l'INSA Strasbourg en tapant 'INSA Strasbourg."]
+    },
+    {
+      "tag": "Weitere Informationen",
+      "patterns": ["Wo kann ich weitere Informationen erhalten?", "Hat die INSA eine Website?"],
+      "responses": ["Weitere Informationen finden Sie auf der Seite des Studiengangs: http://www.insa-strasbourg.fr/fr/mecatronique-par-alternance-franco-allemand/?menu=formation&parent_label=L'ingénieur-e+INSA oder auf der Website der INSA Straßburg, indem Sie 'INSA Straßburg' eingeben."]
+    },
+    {
+      "tag": "More info",
+      "patterns": ["Where can I get more information?", "Does INSA have a website?"],
+      "responses": ["For more information, go to the training page: http://www.insa-strasbourg.fr/fr/mecatronique-par-alternance-franco-allemand/?menu=formation&parent_label=L'ingénieur-e+INSA or to the INSA Strasbourg website by typing 'INSA Strasbourg."]
+    },
+    {
+      "tag": "Evaluation : français",
+      "patterns": ["Comment est-on évaluer ?"],
+      "responses": ["La formation est en contrôle continu, c'est-à-dire qu'il peut y avoir des examens tout au long de l'année."]
+    },
+    {
+      "tag": "Bewertung",
+      "patterns": ["Wie wird man bewertet?"],
+      "responses": ["Die Ausbildung wird kontinuierlich überwacht, d. h. es kann das ganze Jahr über Prüfungen geben."]
+    },
+    {
+      "tag": "Evaluation : anglais",
+      "patterns": ["How are we assessed?"],
+      "responses": ["The course is continuous assessment, which means that there may be exams throughout the year."]
+    },
+    {
+      "tag": "Parcours DeutschINSA",
+      "patterns": ["En quoi consiste le DeutschINSA ?", "Quels parcours sont proposés ?", "Quel parcours est proposé ?"],
+      "responses": ["DeutschINSA se décline en trois parcours : \n - Le parcours avancé s’adresse à des bacheliers avec un niveau d’allemand B1 minimum. \n - Les étudiants suivent des cours d’allemand, des cours d’interculturalité et effectuent au moins un stage dans un pays germanophone. \n - Le parcours confirmé s’adresse à des bacheliers avec un niveau d’allemand B1+ minimum. Les étudiants participent, avant la rentrée de la première année, à une école d’été obligatoire de deux semaines, suivent des cours d’allemand et des cours d’interculturalité ainsi que certains cours ou travaux dirigés scientifiques en allemand, et effectuent au moins un stage dans un pays germanophone, \n - Le parcours expert s’adresse à des bacheliers avec un niveau linguistique B2 + minimum et la volonté de s’investir dans un parcours franco-allemand exigeant. Les étudiants participent, avant la rentrée de la première année, à une école d’été obligatoire de deux semaines et passent les premiers semestres d’études en Allemagne (Hochschule Offenburg ou Hochschule Karlsruhe) afin de préparer un Bachelor allemand (l’équivalent de la licence) en parallèle avec le premier cycle à l’INSA. \nEn fonction de la spécialité choisie (à la fin de l’école d’été), les semestres passés en Allemagne sont soit semestre 1 à 4 soit semestre 3 et 4 (cette deuxième variante ne donnera pas de Bachelor allemand). \n Tous les diplômés DeutschINSA obtiendront la mention « DeutschINSA » au supplément au diplôme d’ingénieur."]
+    },
+    {
+      "tag": "DeutschINSA-Parcours",
+      "patterns": ["Woraus besteht DeutschINSA?", "Welche Kurse werden angeboten?", "Welcher Kurs wird angeboten?"],
+      "responses": ["DeutschINSA besteht aus drei Kursen: \n - Der fortgeschrittene Kurs richtet sich an Abiturienten mit einem Deutsch-Niveau von mindestens B1. \n - Die Studierenden besuchen Deutschkurse, interkulturelle Kurse und absolvieren mindestens ein Praktikum in einem deutschsprachigen Land. \n - Der bestätigte Studiengang richtet sich an Abiturienten mit einem Deutsch-Niveau von mindestens B1+. Die Studierenden nehmen vor Beginn des ersten Studienjahres an einer obligatorischen zweiwöchigen Sommerschule teil, belegen Deutschkurse und interkulturelle Kurse sowie bestimmte Vorlesungen oder wissenschaftliche Tutorien auf Deutsch und absolvieren mindestens ein Praktikum in einem deutschsprachigen Land. \n - Der Studiengang expert richtet sich an Abiturienten mit einem sprachlichen Niveau von mindestens B2+ und dem Willen, sich in einen anspruchsvollen deutsch-französischen Studiengang zu investieren. Die Studierenden nehmen vor Beginn des ersten Studienjahres an einer obligatorischen zweiwöchigen Sommerschule teil und verbringen die ersten Studiensemester in Deutschland (Hochschule Offenburg oder Hochschule Karlsruhe), um parallel zum ersten Studienzyklus an der INSA einen deutschen Bachelor (entspricht der Licence) vorzubereiten. \nJe nach der gewählten Fachrichtung (am Ende der Sommerschule) sind die in Deutschland verbrachten Semester entweder Semester 1 bis 4 oder Semester 3 und 4 (diese zweite Variante führt nicht zu einem deutschen Bachelor). \n Alle DeutschINSA-Absolventen erhalten den Vermerk DeutschINSA im Diplomzusatz für Ingenieure."]
+    },
+    {
+      "tag": "DeutschINSA course",
+      "patterns": ["What does DeutschINSA consist of?", "Which pathways are offered?", "Which pathway is offered?"],
+      "responses": ["DeutschINSA is divided into three tracks: \n - The advanced course is intended for baccalaureate students with a minimum level of German B1. \n - Students follow German courses, interculturality courses and do at least one internship in a German-speaking country. \nThe advanced course is intended for students with a minimum level of German B1+. Students participate in a compulsory two-week summer school before the start of the first year, take German and intercultural courses as well as certain scientific courses or tutorials in German, and do at least one internship in a German-speaking country. The expert program is intended for students with a minimum level of B2+ and the desire to invest in a demanding Franco-German program. Before the start of the first year, students participate in a compulsory two-week summer school and spend the first semesters of their studies in Germany (Hochschule Offenburg or Hochschule Karlsruhe) in order to prepare for a German Bachelor's degree (the equivalent of a bachelor's degree) in parallel with the first cycle at INSA. \nDepending on the speciality chosen (at the end of the summer school), the semesters spent in Germany are either semesters 1 to 4 or semesters 3 and 4 (this second variant will not give a German Bachelor's degree). \nAll DeutschINSA graduates will be awarded the DeutschINSA in the engineering diploma supplement."]
+    },
+    {
+      "tag": "Admission DeutschINSA",
+      "patterns": ["Quels requis faut-il pour accéder au DeutschINSA ?"],
+      "responses": ["Le niveau scientifique requis pour les trois parcours est le même que celui pour les candidats de la filière classique. \nPour être admis au parcours DeutschINSA, il faut donc d’abord être admis à l’INSA Strasbourg. Le recrutement s’appuie sur le dossier scolaire et les notes du bac dans certaines matières. \nPlus d’informations sur l’admission et la procédure de candidature : http://www.insa-strasbourg.fr/fr/deutschinsa-3/"]
+    },
+    {
+      "tag": "DeutschINSA-Zulassung",
+      "patterns": ["Welche Voraussetzungen muss ich für DeutschINSA erfüllen?"],
+      "responses": ["Das wissenschaftliche Niveau, das für die drei Studiengänge erforderlich ist, ist das gleiche wie bei den Bewerbern für den regulären Studiengang. \nUm zum DeutschINSA-Studiengang zugelassen zu werden, muss man also zunächst an der INSA Straßburg zugelassen werden. Die Einstellung stützt sich auf die Schulunterlagen und die Abiturnote in bestimmten Fächern. \nMehr Informationen über die Zulassung und das Bewerbungsverfahren: http://www.insa-strasbourg.fr/fr/deutschinsa-3/"]
+    },
+    {
+      "tag": "DeutschINSA Admission",
+      "patterns": ["What requirements do you need to access DeutschINSA?"],
+      "responses": ["The scientific level required for the three tracks is the same as that required for candidates in the classical track. \nTo be admitted to the DeutschINSA program, you must first be admitted to INSA Strasbourg. Recruitment is based on academic records and baccalaureate grades in certain subjects. \nMore information on admission and the application procedure: http://www.insa-strasbourg.fr/fr/deutschinsa-3/"]
     },
     {
       "tag": "OH YEAH",
@@ -129,11 +604,21 @@
       "tag": "Blagues",
       "patterns": [
         "Raconte-moi une blague",
-        "Dis moi quelque chose de marrant"
+        "Dis moi quelque chose de marrant",
+        "Raconte-moi en une autre",
+        "Une autre"
       ],
       "responses": [
         "Il paraît que c'est en sciant que Léonard devint scie.",
-        "Vous connaissez l'histoire de l'armoire antipathique? Elle n'est pas commode..."
+        "Vous connaissez l'histoire de l'armoire antipathique? Elle n'est pas commode...",
+        "Comment appelle-t-on un chien sans patte ? On ne l’appelle pas, on va le chercher.",
+        "Que dit un oignon quand il se cogne ? Aïe.",
+        "Qui se débrouille le mieux en Karaté ? Les électriciens parce qu’ils connaissent beaucoup de prises.",
+        "Que fait une fraise sur un cheval ? Tagada Tagada.",
+        "Qu'est-ce qui fait toin toin ? Un tanard.",
+        "Qu'est-ce qui est vert, qui tourne très très vite et qui devient rouge ? Une grenouille dans un mixeur.",
+        "Avec quoi ramasse t'on la papaye ? Avec une foufourche.",
+        "Que dit un informaticien quand il s'ennuie ? Je me fichier."
       ]
     }
   ]
