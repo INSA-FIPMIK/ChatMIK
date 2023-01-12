@@ -24,7 +24,8 @@ Vous pouvez créer un environnement virtuel (venv) pour installer toutes les lib
 
 ```
 $ python3 -m venv nom_du_virtual_env
-$ . nom_du_virtual_env/bin/activate
+$ cd C:\Users\username\Documents\ChatMIK\nom_du_virtual_env\Scripts
+$ activate.bat
 ```
 Installez les librairies nécessaires :
 ```
@@ -48,7 +49,6 @@ Vous aurez un chatbot qui fonctionne dans le terminal avec qui vous pourrez disc
 Il faut se connecter à la jetson: (dans le cas où vous êtes connectés en filaire avec l'ordinateur)
 ```
 $ ssh -X jetson7@192.168.55.1 
-
 ```
 Vous pouvez aussi vous connecter par le wifi si l'ordinateur et la jetson sont connecté sur le même wifi: (listes de wifi disponibles)
 ```
