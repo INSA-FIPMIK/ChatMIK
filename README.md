@@ -88,4 +88,5 @@ $ python3 chat.py
 
 ## Pour aller plus loin
 Dans le dossier "changements" se trouve un fichier chat.py
-L'idée est de faire des fonctions pour toutes les langues
+
+L'idée est de faire des fonctions pour toutes les langues, voir les commentaires dans le code chat.py du dossier "changements"
