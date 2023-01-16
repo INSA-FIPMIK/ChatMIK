@@ -85,3 +85,7 @@ Run:
 $ python3 train.py
 $ python3 chat.py
 ```
+
+## Pour aller plus loin
+Dans le dossier "changements" se trouve un fichier chat.py
+L'idée est de faire des fonctions pour toutes les langues
