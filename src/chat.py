@@ -52,7 +52,7 @@ def text_to_speech_fr(text):
     print("Chatbot: ", text)
     speaker = gTTS(text=text, lang="fr", slow=False)
     speaker.save("res.mp3")
-    os.system("afplay res.mp3")  #mac->afplay | windows->start
+    os.system("afplay res.mp3")  #mac->afplay | windows->start | linux ->mpg123
     os.remove("res.mp3")
 
 # Fonction permettant au chatbot de répondre à l'oral quand on lui écrit qqc en anglais
@@ -61,7 +61,7 @@ def text_to_speech_en(text):
     print("Chatbot: ", text)
     speaker = gTTS(text=text, lang="en", slow=False)
     speaker.save("res.mp3")
-    os.system("afplay res.mp3")  #mac->afplay | windows->start
+    os.system("afplay res.mp3")  #mac->afplay | windows->start | linux ->mpg123
     os.remove("res.mp3")
 
 # Fonction permettant au chatbot de répondre à l'oral quand on lui écrit qqc en allemand
@@ -70,7 +70,7 @@ def text_to_speech_de(text):
     print("Chatbot: ", text)
     speaker = gTTS(text=text, lang="de", slow=False)
     speaker.save("res.mp3")
-    os.system("afplay res.mp3")  #mac->afplay | windows->start
+    os.system("afplay res.mp3")  #mac->afplay | windows->start | linux ->mpg123
     os.remove("res.mp3")
 
 
