@@ -9,7 +9,6 @@ from gtts import gTTS
 # for speech-to-text
 import speech_recognition as sr
 
-
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
@@ -79,15 +78,14 @@ def text_to_speech_de(text):
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 
-#a faire : sent_fr --> réussir à trouver ce qu'il return ou lui dire de return qqch qui puisse finir dans la fonction get_response
-
+#a faire : sent_fr --> rester dans la fonction sent_fr et traiter les infos de l'app en fr
 ######################################################################
 def sent_fr(msg):
     print("je suis dans la sent_fr")
     print("je suis dans le main")
     print(sentence)
     text = request.get_json().get("message")
-    #msg = input("Me: ")
+    #msg = input("Me: ") #permet d'écrire dans le chat de l'invite de commande (il faut le faire dans l'app)
 ######################################################################
 
 ######################################################################
@@ -101,7 +99,8 @@ def get_response(msg):
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X).to(device)
     
-    if "fr" in sentence: 
+    if "fr" in sentence: #condition pour entre dans la fonction sent_fr, la ou on parle seulement fr (si phrase en allemand ou anglais, 
+                         #l'app ne comprend pas et rédemande la question + demande s'il veut changer de langue)
         print("je suis dans la sentence")
         sent_fr(msg) 
     
@@ -119,8 +118,10 @@ def get_response(msg):
     return "Désolé, je ne comprends pas..."
 ######################################################################
 
+######################################################################
+#le programme suivant est à mettre sous forme de fonction et prendre en compte les commentaires vues avant
 # lance le programme
-#__name__ == "__main__"
+
 if __name__ == "__main__":
 
     # 1er dialogue de la part du chatbot
@@ -250,7 +251,7 @@ if __name__ == "__main__":
                         text_to_speech_fr("Choisissez votre langue : anglais, allemand ou français")
 
                         break
-
+######################################################################
                 
 
 
